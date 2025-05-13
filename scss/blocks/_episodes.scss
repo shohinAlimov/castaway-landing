@@ -1,0 +1,29 @@
+.episodes {
+  margin: 100px 0;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 0 0 40px 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 64px;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+
+  }
+}

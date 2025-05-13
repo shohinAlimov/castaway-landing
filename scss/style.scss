@@ -1,0 +1,14 @@
+/* --------- GLOBAL --------- */
+@import "./global/normalize";
+@import "./global/variables";
+@import "./global/fonts";
+@import "./global/reboot";
+@import "./global/container";
+@import "./global/visually-hidden";
+
+/* --------- BLOCKS --------- */
+@import "./blocks/btn";
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/episodes";
+@import "./blocks/card";

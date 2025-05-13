@@ -1,0 +1,54 @@
+.card {
+  min-height: 512px;
+  max-width: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 53px;
+  border-radius: 32px;
+  background-color: $color-black;
+  transition: background-color $transition-300;
+
+  &:hover {
+
+    background-color: #0d0d0d;
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__note {
+    display: inline-flex;
+    padding: 0 16px;
+    background-color: $color-cod-gray;
+    color: $color-white;
+    margin: 0 0 48px 0;
+    border-radius: 6px;
+  }
+
+  &__episode {
+    display: block;
+    font-size: 17px;
+    line-height: 27px;
+    color: $color-blue-chill;
+    margin: 0 0 18px 0;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+    color: $color-white;
+    font-weight: 400;
+    margin: 0 0 28px 0;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-right: 20px;
+  }
+}

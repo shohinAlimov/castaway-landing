@@ -4,11 +4,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Castaway Landing Page</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo-link" href="./index.html">
+          <svg width="160" height="38" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#logo-icon"></use>
+          </svg>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Episodes</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <h1 class="visually-hidden">Podcast Website </h1>
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__img">
+            <img class="hero__img-src" src="./img/images/hero-image.jpg" alt="man with headphones" width="650"
+              height="873">
+            <svg class="hero__img-confeti" width="68" height="74" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#hero-confeti"></use>
+            </svg>
+          </div>
+
+          <div class="hero__inner">
+            <div class="hero__info">
+              <span class="hero__title">Take your podcast to the</span>
+              <span class="hero__title underline">next
+                <svg width="163" height="11" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#hero-underline"></use>
+                </svg>
+              </span>
+              <span class="hero__title bold">level</span>
+            </div>
+
+            <div class="hero__listen">
+              <span class="hero__listen-on">Listen on</span>
+              <ul class="hero__listen-list">
+                <li class="hero__listen-item">
+                  <a class="hero__listen-link" href="#">
+                    <svg width="32" height="32" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-spotify"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="hero__listen-item">
+                  <a class="hero__listen-link" href="#">
+                    <svg width="32" height="32" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-app-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="hero__listen-item">
+                  <a class="hero__listen-link" href="#">
+                    <svg width="32" height="32" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-app-3"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="hero__listen-item">
+                  <a class="hero__listen-link" href="#">
+                    <svg width="32" height="32" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-app-4"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="hero__listen-item">
+                  <a class="hero__listen-link" href="#">
+                    <svg width="32" height="32" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-app-5"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="episodes">
+      <div class="container">
+        <div class="episodes__wrapper">
+          <div class="episodes__top">
+            <h1 class="episodes__title">Latest episodes</h1>
+            <a class="btn btn--primary" href="#">View all episodes</a>
+          </div>
+          <ul class="episodes__list">
+            <li class="episodes__item">
+              <a class="card" href="#">
+                <img class="card__image" src="./img/images/episode-1.jpg" alt="episode-3 photo">
+                <div class="card__info">
+                  <span class="card__note">Gear</span>
+
+                  <span class="card__episode">Episode 3</span>
+
+                  <h2 class="card__title">Should you get outboard audio gear?</h2>
+                  <p class="card__text">Is&nbsp;hardware really worth it&nbsp;when it&nbsp;comes to&nbsp;podcasting? The
+                    answer is...it depends. Here&rsquo;s
+                    our reasons on&nbsp;why you might want to&nbsp;consider picking something&nbsp;up.</p>
+                  <button class="btn btn--primary">View Episode Details</button>
+                </div>
+              </a>
+            </li>
+            <li class="episodes__item">
+              <a class="card" href="#">
+                <img class="card__image" src="./img/images/episode-2.jpg" alt="episode-2 photo">
+                <div class="card__info">
+                  <span class="card__note">Tips &amp;&nbsp;Tricks</span>
+
+                  <span class="card__episode">Episode 2</span>
+
+                  <h2 class="card__title">Mic tricks to&nbsp;take you to&nbsp;the next level</h2>
+                  <p class="card__text">Stop rolling with those default settings on&nbsp;your mic. These small tweaks
+                    will take you from sounding good
+                    to&nbsp;great.</p>
+                  <button class="btn btn--primary">View Episode Details</button>
+                </div>
+              </a>
+            </li>
+            <li class="episodes__item">
+              <a class="card" href="#">
+                <img class="card__image" src="./img/images/episode-3.jpg" alt="episode-1 photo">
+                <div class="card__info">
+                  <span class="card__note">Gear</span>
+
+                  <span class="card__episode">Episode 1</span>
+
+                  <h2 class="card__title">The best microphone under $200</h2>
+                  <p class="card__text">With so&nbsp;many microphones on&nbsp;the market, how are you supposed
+                    to&nbsp;know what&rsquo;s the best? Take
+                    a&nbsp;look at&nbsp;our top picks.</p>
+                  <button class="btn btn--primary">View Episode Details</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
 </body>
 
 </html>
