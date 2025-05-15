@@ -1,5 +1,9 @@
 .episodes {
-  margin: 100px 0;
+  padding: 100px 0;
+
+  &__wrapper {
+    padding: 0 20px;
+  }
 
   &__top {
     display: flex;

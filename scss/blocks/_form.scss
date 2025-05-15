@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__input {
+    border: none;
+    margin: 0;
+
+    min-width: 522px;
+    padding: 26px 17px;
+    background-color: $color-cod-gray;
+    border-radius: 6px;
+    outline: none;
+
+    font-size: 24px;
+    line-height: 28.8px;
+    color: $color-white;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 28.8px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}

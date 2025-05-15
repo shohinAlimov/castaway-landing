@@ -1,0 +1,37 @@
+.newsletter {
+  padding: 100px 0;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 60px 75px 60px;
+    background-color: $color-black;
+    border-radius: 32px;
+    margin: 0 20px;
+  }
+
+  &__confeti {
+    position: absolute;
+    bottom: -26px;
+    left: -38px;
+  }
+
+  &__note {
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-blue-chill;
+    display: block;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    margin: 0;
+    max-width: 450px;
+  }
+}

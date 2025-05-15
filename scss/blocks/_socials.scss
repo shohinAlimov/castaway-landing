@@ -1,0 +1,18 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__link {
+    color: $color-white;
+    transition: color $transition-300;
+
+    &:hover {
+      color: $color-blue-chill;
+    }
+  }
+}

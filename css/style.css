@@ -506,7 +506,8 @@ textarea {
   line-height: 24px;
   margin: 0 0 16px 0;
 }
-.hero__listen-list {
+
+.platforms {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -517,7 +518,10 @@ textarea {
 }
 
 .episodes {
-  margin: 100px 0;
+  padding: 100px 0;
+}
+.episodes__wrapper {
+  padding: 0 20px;
 }
 .episodes__top {
   display: flex;
@@ -587,4 +591,214 @@ textarea {
   line-height: 33px;
   color: rgba(255, 255, 255, 0.7);
   padding-right: 20px;
+}
+
+.host {
+  padding: 100px 0;
+}
+.host__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 0 20px;
+}
+.host__btn {
+  padding: 5px;
+  background-color: #118DA8;
+  border-radius: 50%;
+  margin: 0 0 10px 0;
+  width: 100px;
+  height: 100px;
+}
+.host__note {
+  font-size: 18px;
+  line-height: 27px;
+  color: #118DA8;
+}
+.host__name {
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 79.2px;
+  letter-spacing: 2.88px;
+  margin: 0 0 28px 0;
+}
+.host__text {
+  font-size: 22px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 20px 0;
+}
+.host__image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.newsletter {
+  padding: 100px 0;
+}
+.newsletter__wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 60px 60px 75px 60px;
+  background-color: #000000;
+  border-radius: 32px;
+  margin: 0 20px;
+}
+.newsletter__confeti {
+  position: absolute;
+  bottom: -26px;
+  left: -38px;
+}
+.newsletter__note {
+  font-size: 18px;
+  line-height: 27px;
+  color: #118DA8;
+  display: block;
+}
+.newsletter__title {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 79.2px;
+  letter-spacing: 2.88px;
+  margin: 0;
+  max-width: 450px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__input {
+  border: none;
+  margin: 0;
+  min-width: 522px;
+  padding: 26px 17px;
+  background-color: #191919;
+  border-radius: 6px;
+  outline: none;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #ffffff;
+}
+.form__input::-moz-placeholder {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.form__input::placeholder {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.feedbacks {
+  padding: 100px 0;
+}
+.feedbacks__wrapper {
+  padding: 0 20px;
+}
+.feedbacks__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.feedbacks__item {
+  min-height: 365px;
+}
+
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #000000;
+  padding: 50px;
+  border-radius: 32px;
+  height: 100%;
+}
+.feedback-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.feedback-card__info {
+  font-size: 36px;
+  line-height: 43.2px;
+  margin: 0;
+  color: #ffffff;
+}
+.feedback-card__author {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  padding: 100px 0;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+.footer__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+.footer__logo-link svg {
+  color: #ffffff;
+  transition: color ease-in 0.3s;
+}
+.footer__logo-link svg:hover {
+  color: #118DA8;
+}
+.footer__navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 180px;
+}
+.footer__nav-link {
+  font-size: 17px;
+  line-height: 27px;
+  color: #ffffff;
+  transition: color ease-in 0.3s;
+}
+.footer__nav-link:hover {
+  color: #118DA8;
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.socials__link {
+  color: #ffffff;
+  transition: color ease-in 0.3s;
+}
+.socials__link:hover {
+  color: #118DA8;
 }/*# sourceMappingURL=style.css.map */
