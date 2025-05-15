@@ -7,7 +7,7 @@
     border: none;
     margin: 0;
 
-    min-width: 522px;
+    width: 100%;
     padding: 26px 17px;
     background-color: $color-cod-gray;
     border-radius: 6px;
@@ -16,6 +16,10 @@
     font-size: 24px;
     line-height: 28.8px;
     color: $color-white;
+
+    @media (max-width: 1120px) {
+      padding: 15px;
+    }
 
     &::placeholder {
       font-size: 24px;

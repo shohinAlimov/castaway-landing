@@ -8,6 +8,10 @@
   border-radius: 32px;
   height: 100%;
 
+  @media (max-width: $vp-tablet) {
+    padding: 30px;
+  }
+
   &__rating {
     display: flex;
     align-items: center;
@@ -19,11 +23,41 @@
     line-height: 43.2px;
     margin: 0;
     color: $color-white;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 
   &__author {
     font-size: 24px;
     line-height: 28.8px;
     color: rgba(255, 255, 255, 0.7);
+
+    @media (max-width: $vp-tablet) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }

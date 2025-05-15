@@ -1,18 +1,31 @@
 .footer {
   padding: 100px 0;
 
+  @media (max-width: $vp-tablet) {
+    padding: 50px 0;
+  }
+
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 440px 1fr 440px;
+    gap: 16px;
     justify-content: space-between;
     padding: 0 20px;
     align-items: flex-start;
+
+    @media (max-width: 1400px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width:425px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__logo-link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     margin: 0 0 20px 0;
 
     & svg {
@@ -29,9 +42,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+
+    @media (max-width: $vp-mobile) {
+      grid-template-columns: 1fr;
+      text-align: right;
+    }
+
+    @media (max-width:425px) {
+      grid-row: 2/3;
+      text-align: left;
+    }
   }
 
   &__nav {
+
 
     &-list {
       margin: 0;
@@ -43,6 +67,12 @@
       gap: 10px;
 
       min-width: 180px;
+
+      @media (max-width: $vp-tablet) {
+        min-width: unset;
+      }
+
+
     }
 
     &-link {
@@ -54,6 +84,12 @@
       &:hover {
         color: $color-blue-chill;
       }
+    }
+  }
+
+  &__links {
+    @media (max-width: $vp-mobile) {
+      display: none;
     }
   }
 }

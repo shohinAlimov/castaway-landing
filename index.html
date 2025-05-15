@@ -33,6 +33,18 @@
             </li>
           </ul>
         </nav>
+        <button class="header__burger burger" type="button" aria-label="Открыть бургерное меню">
+          <span class="burger__menu">
+          </span>
+        </button>
+        <div class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Home</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Episodes</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -52,13 +64,15 @@
 
           <div class="hero__inner">
             <div class="hero__info">
-              <span class="hero__title">Take your podcast to the</span>
-              <span class="hero__title underline">next
-                <svg width="163" height="11" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#hero-underline"></use>
-                </svg>
+              <span class="hero__title">Take your podcast to the
+                <span class="hero__title underline">next
+                  <svg width="163" height="11" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#hero-underline"></use>
+                  </svg>
+                </span>
+                <span class="hero__title bold">level</span>
               </span>
-              <span class="hero__title bold">level</span>
+
             </div>
 
             <div class="hero__listen">
@@ -163,6 +177,7 @@
               </a>
             </li>
           </ul>
+          <a class="card__secondary-btn btn btn--primary" href="#">View all episodes</a>
 
         </div>
       </div>

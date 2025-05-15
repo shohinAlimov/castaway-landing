@@ -1,8 +1,16 @@
 .feedbacks {
   padding: 100px 0;
 
+  @media (max-width: $vp-tablet) {
+    padding: 50px 0;
+  }
+
   &__wrapper {
     padding: 0 20px;
+
+    @media (max-width: $vp-tablet) {
+      padding: 0;
+    }
   }
 
   &__list {
@@ -13,9 +21,25 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 450px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
     min-height: 365px;
+
+    @media (max-width: 1200px) {
+      min-height: 260px;
+    }
+
+    @media (max-width: 450px) {
+      min-height: 200px;
+    }
   }
 }

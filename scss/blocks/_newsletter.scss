@@ -1,22 +1,46 @@
 .newsletter {
   padding: 100px 0;
 
+  @media (max-width: $vp-tablet) {
+    padding: 50px 0;
+  }
+
   &__wrapper {
     position: relative;
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     gap: 50px;
     padding: 60px 60px 75px 60px;
     background-color: $color-black;
     border-radius: 32px;
     margin: 0 20px;
+
+    @media (max-width: $vp-tablet) {
+      grid-template-columns: 1fr;
+      margin: 0;
+      border-radius: 15px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      padding: 20px;
+    }
   }
 
   &__confeti {
     position: absolute;
     bottom: -26px;
     left: -38px;
+
+    @media (max-width: $vp-mobile) {
+      bottom: unset;
+      left: unset;
+      top: -16px;
+      right: -28px;
+      transform: rotate(200deg);
+      width: 100px;
+      height: 50px;
+    }
   }
 
   &__note {
@@ -32,6 +56,23 @@
     line-height: 79.2px;
     letter-spacing: 2.88px;
     margin: 0;
-    max-width: 450px;
+
+    @media (max-width: 1120px) {
+      font-size: 54px;
+      line-height: 64px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 1.2px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0.8px;
+    }
   }
 }
